@@ -2,7 +2,7 @@
 opam-version: "2.0"
 synopsis: "OCaml bindings to Hdr Histogram"
 description: "OCaml bindings to Hdr Histogram"
-maintainer: ["KC Sivaramakrishnan" "Christiano Haesbaert"]
+maintainer: ["KC Sivaramakrishnan" "Christiano Haesbaert" "Sudha Parimala"]
 authors: ["KC Sivaramakrishnan"]
 license: "MIT"
 tags: ["histogram" "tail latency"]
