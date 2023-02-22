@@ -11,9 +11,7 @@
   (deps hdr_histogram.h dllhdr_histogram.so libhdr_histogram.a)
   (build_flags_resolver
    (vendored
-    ; hack: multiple -I directives to work around cc commands being run from
-    ; different relative directories.  Is there a cleaner way to do this?
-    (c_flags :standard "-Ilib" "-I.")))
+    (c_flags :standard "-I.")))
   (headers
    (include "hdr_histogram.h"))
   (type_description

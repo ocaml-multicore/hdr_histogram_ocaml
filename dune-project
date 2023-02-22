@@ -1,5 +1,5 @@
-(lang dune 3.3)
-(using ctypes 0.1)
+(lang dune 3.7)
+(using ctypes 0.3)
 
 (name hdr_histogram)
 
