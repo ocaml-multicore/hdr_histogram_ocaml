@@ -1,10 +1,11 @@
 type t
 (** The type of histogram values *)
 
-val init : lowest_discernible_value:int
-        -> highest_trackable_value:int
-        -> significant_figures:int
-        -> t
+val init :
+  lowest_discernible_value:int ->
+  highest_trackable_value:int ->
+  significant_figures:int ->
+  t
 (** Initialize a new histogram *)
 
 val record_value : t -> int -> bool
