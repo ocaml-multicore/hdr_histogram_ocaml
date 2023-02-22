@@ -33,4 +33,7 @@ build: [
     "@doc" {with-doc}
   ]
 ]
+available: [
+  (arch = "x86_64" | arch = "arm64")
+]
 dev-repo: "git+https://github.com/ocaml-multicore/hdr_histogram_ocaml.git"
