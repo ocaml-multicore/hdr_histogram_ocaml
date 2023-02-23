@@ -1,3 +1,7 @@
+## dev
+
+* Remove ctypes include path hack by using ctypes 0.3 / dune 3.7 (@TheLortex, #5)
+
 ## v0.0.3 (2023-02-17)
 
 * Add memory_size function (@crackcomm, #1)
