@@ -1,3 +1,7 @@
+## v0.0.4 (2024-01-09)
+
+* Fix FreeBSD support (tmcgilchrist, #7)
+
 ## v0.0.3 (2023-02-23)
 
 * Add memory_size function (@crackcomm, #1)

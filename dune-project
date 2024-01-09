@@ -3,14 +3,14 @@
 
 (name hdr_histogram)
 
-(generate_opam_files true)
+(generate_opam_files false)
 
 (source
  (github ocaml-multicore/hdr_histogram_ocaml))
 
 (authors "KC Sivaramakrishnan")
 
-(maintainers "KC Sivaramakrishnan" "Christiano Haesbaert")
+(maintainers "KC Sivaramakrishnan" "Christiano Haesbaert" "Sudha Parimala")
 
 (license MIT)
 
