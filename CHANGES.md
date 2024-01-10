@@ -1,6 +1,6 @@
 ## v0.0.4 (2024-01-09)
 
-* Fix FreeBSD support (tmcgilchrist, #7)
+* Add FreeBSD support, fixes to endian includes for FreeBSD and DragonFly BSD (tmcgilchrist, #7)
 
 ## v0.0.3 (2023-02-23)
 
