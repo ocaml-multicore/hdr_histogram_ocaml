@@ -1,3 +1,7 @@
+## v0.0.4 (2024-01-09)
+
+* Add FreeBSD support, fixes to endian includes for FreeBSD and DragonFly BSD (tmcgilchrist, #7)
+
 ## v0.0.3 (2023-02-23)
 
 * Add memory_size function (@crackcomm, #1)
