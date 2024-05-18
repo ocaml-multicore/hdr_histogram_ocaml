@@ -14,26 +14,10 @@ module Functions (F : Ctypes.FOREIGN) = struct
       @-> ptr (ptr Types.hdr_histogram)
       @-> returning int)
 
-  let hdr_record_value =
-    foreign "hdr_record_value"
-      (ptr Types.hdr_histogram @-> int64_t @-> returning bool)
-
   let hdr_close =
     foreign "hdr_close" (ptr Types.hdr_histogram @-> returning void)
 
   let hdr_value_at_percentile =
     foreign "hdr_value_at_percentile"
       (ptr Types.hdr_histogram @-> double @-> returning int64_t)
-
-  let hdr_min = foreign "hdr_min" (ptr Types.hdr_histogram @-> returning int64_t)
-  let hdr_max = foreign "hdr_max" (ptr Types.hdr_histogram @-> returning int64_t)
-
-  let hdr_mean =
-    foreign "hdr_mean" (ptr Types.hdr_histogram @-> returning double)
-
-  let hdr_stddev =
-    foreign "hdr_stddev" (ptr Types.hdr_histogram @-> returning double)
-
-  let hdr_get_memory_size =
-    foreign "hdr_get_memory_size" (ptr Types.hdr_histogram @-> returning size_t)
 end

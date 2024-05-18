@@ -19,6 +19,10 @@
    (functor Type_description))
   (function_description
    (concurrency sequential)
+   (instance Function_fast)
+   (functor Function_description_fast))
+  (function_description
+   (concurrency unlocked)
    (instance Function)
    (functor Function_description))
   (generated_types Types_generated)
