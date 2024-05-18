@@ -25,6 +25,7 @@
    dune
   (ctypes (>= 0.20.1))
   (ctypes-foreign (>= 0.18.0))
+  (bechamel :with-test)
   (conf-pkg-config :build)
   (conf-cmake :build)
    conf-zlib)

@@ -1,0 +1,4 @@
+(executable
+ (name test2)
+ (optional)
+ (libraries hdr_histogram bechamel.monotonic_clock))
