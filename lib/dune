@@ -18,7 +18,7 @@
    (instance Type)
    (functor Type_description))
   (function_description
-   (concurrency unlocked)
+   (concurrency sequential)
    (instance Function)
    (functor Function_description))
   (generated_types Types_generated)
