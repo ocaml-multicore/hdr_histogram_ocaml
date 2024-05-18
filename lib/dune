@@ -14,8 +14,8 @@
    (vendored
     (c_flags :standard "-I.")))
   (headers
-   (include "hdr_histogram.h" "stdio.h")
-  )
+   (preamble
+    "#include <hdr_histogram.h>\n     #include <stdio.h>\n\n     static inline bool hdr_record_value_int(struct hdr_histogram* h, int value)\n     { return hdr_record_value(h, value); }\n    "))
   (type_description
    (instance Type)
    (functor Type_description))

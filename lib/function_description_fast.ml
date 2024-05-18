@@ -8,9 +8,9 @@ module Types = Types_generated
 module Functions (F : Ctypes.FOREIGN) = struct
   open F
 
-  let hdr_record_value =
-    foreign "hdr_record_value"
-      (ptr Types.hdr_histogram @-> int64_t @-> returning bool)
+  let hdr_record_value_int =
+    foreign "hdr_record_value_int"
+      (ptr Types.hdr_histogram @-> int @-> returning bool)
 
   let hdr_value_at_percentile =
     foreign "hdr_value_at_percentile"
