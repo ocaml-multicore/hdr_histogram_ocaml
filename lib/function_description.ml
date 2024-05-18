@@ -20,4 +20,9 @@ module Functions (F : Ctypes.FOREIGN) = struct
   let hdr_value_at_percentile =
     foreign "hdr_value_at_percentile"
       (ptr Types.hdr_histogram @-> double @-> returning int64_t)
+
+  let hdr_percentiles_print =
+    foreign "hdr_percentiles_print"
+      (ptr Types.hdr_histogram @-> ptr Types.file @-> int32_t @-> double
+     @-> Types.format_type @-> returning int)
 end

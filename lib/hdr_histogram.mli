@@ -31,3 +31,8 @@ val stddev : t -> float
 
 val memory_size : t -> int
 (** Get the memory size of the histogram *)
+
+type format_type = CLASSIC | CSV
+
+val hdr_percentiles_print : t -> string -> int32 -> float -> format_type -> unit
+(** Print out a percentile based histogram to the supplied file. *)

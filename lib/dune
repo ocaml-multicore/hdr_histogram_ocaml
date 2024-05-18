@@ -6,6 +6,7 @@
  ; ctypes backward compatibility shims warn sometimes; suppress them
  (flags
   (:standard -w -9-27))
+ (libraries unix)
  (ctypes
   (external_library_name hdr_histogram)
   (deps hdr_histogram.h dllhdr_histogram.so libhdr_histogram.a)
@@ -13,7 +14,8 @@
    (vendored
     (c_flags :standard "-I.")))
   (headers
-   (include "hdr_histogram.h"))
+   (include "hdr_histogram.h" "stdio.h")
+  )
   (type_description
    (instance Type)
    (functor Type_description))
@@ -21,6 +23,11 @@
    (concurrency sequential)
    (instance Function_fast)
    (functor Function_description_fast))
+  (function_description
+   (concurrency unlocked)
+   (errno_policy return_errno)
+   (instance Stdio)
+   (functor Stdio_description))
   (function_description
    (concurrency unlocked)
    (instance Function)
