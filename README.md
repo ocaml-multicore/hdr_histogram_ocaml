@@ -8,7 +8,7 @@ OCaml bindings to
 Install `hdr_histogram`:
 
 ```bash
-$ git clone https://github.com/kayceesrk/hdr_histogram_ocaml
+$ git clone https://github.com/ocaml-multicore/hdr_histogram_ocaml
 $ cd hdr_histogram_ocaml
 $ opam pin add .
 ```
