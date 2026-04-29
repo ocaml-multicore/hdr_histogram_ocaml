@@ -1,6 +1,16 @@
+## 0.0.5 (2026-04-29)
+
+* Do not release runtime lock when recording values, ~1.8x faster value recording (@edwintorok, #9)
+* Split functions that release the runtime lock into a separate module (@edwintorok, #10)
+* Add binding to `hdr_percentiles_print` (@edwintorok, #10)
+* Add self latency measurements (@edwintorok, #10)
+* Avoid allocation in `Hdr_histogram.record_value` by using `int` instead of `int64` (@edwintorok, #10)
+* Update repository name to `ocaml-multicore/hdr_histogram_ocaml` (@tmcgilchrist, #11)
+* Add Windows support, not available on 32-bit bytecode platforms (@tmcgilchrist, #12)
+
 ## 0.0.4 (2024-01-09)
 
-* Add FreeBSD support, fixes to endian includes for FreeBSD and DragonFly BSD (tmcgilchrist, #7)
+* Add FreeBSD support, fixes to endian includes for FreeBSD and DragonFly BSD (@tmcgilchrist, #7)
 
 ## 0.0.3 (2023-02-23)
 
