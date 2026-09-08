@@ -88,8 +88,9 @@
      libhdr_histogram/src/hdr_thread.c
      libhdr_histogram/src/hdr_time.c
      libhdr_histogram/src/hdr_writer_reader_phaser.c)
+    ; mingw ships binutils under a target prefix; there is no plain "ar" in PATH
     (run
-     ar
+     %{ocaml-config:target}-ar
      rcs
      libhdr_histogram.a
      hdr_encoding.o

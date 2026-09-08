@@ -1,3 +1,7 @@
+## Unreleased
+
+* Use correct `ar` binary target on Windows builds. (@ngorogiannis, #14)
+
 ## 0.0.5 (2026-04-29)
 
 * Do not release runtime lock when recording values, ~1.8x faster value recording (@edwintorok, #9)
