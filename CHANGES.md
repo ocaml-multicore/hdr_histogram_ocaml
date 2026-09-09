@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 0.0.6 (2026-09-09)
+
 * Use correct `ar` binary target on Windows builds. (@ngorogiannis, #14)
 
 ## 0.0.5 (2026-04-29)
