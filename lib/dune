@@ -9,6 +9,7 @@
  (libraries unix)
  (ctypes
   (external_library_name hdr_histogram)
+  (deps hdr_histogram.h)
   (build_flags_resolver
    (vendored
     (c_flags :standard "-I.")))
